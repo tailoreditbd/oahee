@@ -1,0 +1,107 @@
+/* Oahee identity sampled from the supplied logo: orange #F24A03, blue #0F386E. */
+:root{--brand-primary:#0f386e;--brand-accent:#f24a03;--brand-hover:#09294f;--brand-accent-hover:#d84000;--brand-tint:#eef4fb;--brand-border:#d3e0f0;--purple:#0f386e;--navy:#0f386e;--orange:#f24a03;--ink:#183655;--muted:#53687e;--border:#dde6f0;--paper:#fbfcfe;--blue-deep:#0f386e;--luna-aqua:#fff0e8;--luna-teal:#f24a03;--luna-blue:#0f386e;--luna-dark:#0f386e;--luna-navy:#0f386e;--action-ink:#03152d}
+body{background:var(--paper);color:var(--ink)}
+header{border-top-color:var(--brand-accent);border-bottom-color:var(--border)}
+header .navigation #search-form,.intro-search{background:#f2f6fc;border-color:var(--brand-border)}
+header .navigation #search,header .navigation #search-category,.intro-search input{color:var(--brand-primary)}
+header .navigation #search::placeholder,.intro-search input::placeholder{color:#53687e}
+/* All action buttons use the logo orange with high-contrast dark blue labels. */
+body button,body .button,body .oes-cta,body .ofs-cta{background:var(--brand-accent);color:var(--action-ink);border-color:var(--brand-accent)}
+body button:hover,body .button:hover{background:var(--brand-accent-hover);color:#fff}
+.navigation #search-form>.search-button,.intro-search .button,.category-row #all-categories,.category-browse,.seller-section .button,.banner-actions .button,.banner-discover .banner-actions .button,.add,.cart-summary .button{background:var(--brand-accent);border-color:var(--brand-accent);color:var(--action-ink)}
+.navigation #search-form>.search-button:hover,.intro-search .button:hover,.category-row #all-categories:hover,.category-row #all-categories[aria-expanded=true],.category-browse:hover,.seller-section .button:hover,.add:hover{background:var(--brand-accent-hover);color:#fff;box-shadow:none}
+#about-oahee .intro-actions>a,#about-oahee .intro-actions>a:not(.button){background:var(--brand-accent);border-color:var(--brand-accent);color:var(--action-ink)}
+#about-oahee .intro-actions>a:hover,#about-oahee .intro-actions>a:not(.button):hover{background:var(--brand-accent-hover);border-color:var(--brand-accent-hover);color:#fff}
+.navigation .category-row #nav-links>a{color:var(--brand-primary)}
+.navigation .category-row #nav-links>a:hover,.navigation .category-row #nav-links>a:focus-visible{background:#fff0e8;color:var(--brand-primary)}
+.navigation #nav-links>a[aria-current=page]:after{background:var(--brand-accent)}
+.navigation .category-row .category-nav #mega-menu>a{color:var(--brand-primary);background:#fff}
+.navigation .category-row .category-nav #mega-menu>a:hover,.navigation .category-row .category-nav #mega-menu>a:focus-visible{background:#fff3ec;border-left-color:var(--brand-accent);color:var(--brand-primary)}
+.navigation .category-row .category-nav #mega-menu>a:after{border-color:#7d91a9}
+.navigation .category-row .category-nav #mega-menu>a:hover:after{border-color:var(--brand-accent)}
+header .navigation .nav-actions .header-action{background:var(--brand-accent);color:var(--action-ink);border-radius:9px;padding:8px;gap:5px}
+header .navigation .nav-actions .header-action:hover{background:var(--brand-accent-hover);color:#fff}
+header .navigation .nav-actions .header-action small{color:inherit}
+header .navigation .nav-actions .header-action b{background:var(--brand-primary);color:#fff;border-color:#fff}
+header .navigation.main-header #nav-toggle{background:var(--brand-accent);color:var(--action-ink);border-color:var(--brand-accent)}
+/* Blue headings and readable body copy across every section. */
+h1,h2,h3,h4,h5,h6,#about-oahee .intro-copy h1,.how-it-works .section-heading h2,.seller-section h2,.story-copy .section-heading h2,.faq-section h2,.content-reasons .section-heading h2{color:var(--brand-primary)}
+p,.section-heading p,.homepage-intro .intro-copy>p,.content-grid p,.content-steps p,.story-copy .section-heading p,.story-copy .content-grid p{color:#53687e}
+.eyebrow,.intro-copy .eyebrow,.how-it-works .eyebrow,.seller-section .eyebrow{color:var(--brand-primary)}
+.content-grid strong,.content-steps strong,.seller-section li strong,.category-slider .content-categories .category-tile strong{color:var(--brand-primary)}
+.category-slider .content-categories .category-tile{border-color:var(--border)}
+.category-slider .content-categories .category-tile:hover{border-color:var(--brand-accent);box-shadow:0 5px 16px #f24a0312}
+.category-slider .content-categories .category-tile p{color:#53687e}
+.image-how .content-steps li{background:#f2f6fc;border-color:var(--brand-border)}
+.content-steps li:before{background:var(--brand-accent);color:var(--action-ink);border-color:var(--brand-accent)}
+.seller-section{background:#edf3fb;border:1px solid var(--brand-border)}
+.seller-section>div>p,.seller-section li p,.seller-section small{color:#53687e}
+.seller-section li{border-color:#c6d7ed}
+.section-photo figcaption,.image-label{background:#fff1e8f2;color:var(--brand-primary)}
+.content-reasons{border-color:var(--brand-border);background-color:var(--brand-primary)}
+.content-reasons:before{background:linear-gradient(110deg,#0f386ebd,#0f386e38)}
+.content-reasons>.section-heading{background:#fffffff0;padding:20px;border-radius:14px}
+.content-reasons .section-heading p{color:#53687e}
+.content-reasons .content-grid li{background:#fffffff2;border-color:#d3e0f0}
+.content-reasons .content-grid strong{color:var(--brand-primary)}
+.content-reasons .content-grid p{color:#53687e}
+.content-reasons .contact-cta{background:var(--brand-accent);border-color:var(--brand-accent);color:var(--action-ink)}
+.content-reasons .contact-cta:hover{background:var(--brand-accent-hover);border-color:var(--brand-accent-hover);color:#fff}
+/* Hero copy stays blue against a light veil; photography and motion are retained. */
+.oahee-film-slider{background:var(--brand-primary)}
+.oahee-film-slider .ofs-shade{background:linear-gradient(90deg,rgba(249,251,255,.97),rgba(241,246,253,.88) 42%,rgba(15,56,110,.15) 78%),linear-gradient(0deg,#0f386e30,transparent)}
+.oahee-film-slider h2,.oahee-film-slider .ofs-fixed,.oahee-film-slider .ofs-word{color:var(--brand-primary)}
+.oahee-film-slider .ofs-eyebrow{color:var(--brand-primary)}
+.oahee-film-slider .ofs-copy p{color:#354e68}
+.oahee-film-slider .ofs-cta{padding:12px 20px;border:1px solid var(--brand-accent);border-radius:6px;background:var(--brand-accent);color:var(--action-ink);min-height:44px}
+.oahee-film-slider .ofs-cta:hover{background:var(--brand-accent-hover);color:#fff;border-color:var(--brand-accent-hover)}
+.oahee-film-slider .ofs-arrows button{background:var(--brand-accent);border-color:var(--brand-accent);color:var(--action-ink)}
+.oahee-film-slider .ofs-arrows button:hover{background:var(--brand-accent-hover);color:#fff}
+.oahee-film-slider :focus-visible{outline-color:var(--brand-primary)}
+.faq-section{background:linear-gradient(145deg,#f4f7fc,#e6eef9)}
+.faq-section>div>p,.faq-section details p{color:#53687e}
+.faq-section details,.faq-section details:first-child{background:#ffffffc9;border-color:var(--brand-border)}
+.faq-section details[open]{background:#fff;border-color:#acc4e1}
+.faq-section summary{color:var(--brand-primary)}
+.faq-section summary:before{background:#fff0e8;color:var(--brand-primary);border-color:#ffcfb8}
+.faq-section summary:after,.faq-section details[open] summary:after{background:var(--brand-accent);color:var(--action-ink);box-shadow:0 3px 10px #f24a0320}
+.faq-section summary:hover{background:#fff4ed}
+.faq-section summary:focus-visible{outline-color:var(--brand-primary)}
+footer{background:#edf3fb;border-top:4px solid var(--brand-accent)}
+footer .footer-grid h3{color:var(--brand-primary)}
+footer .footer-grid p,footer .footer-grid small,footer .footer-grid>div>a:not(.logo){color:#405a77}
+footer .footer-grid button{display:block;width:fit-content;background:var(--brand-accent);color:var(--action-ink);padding:7px 12px;border-radius:6px;margin:9px 0}
+footer .footer-grid button:hover{background:var(--brand-accent-hover);color:#fff}
+footer .footer-grid>div>a:not(.logo):hover{color:var(--brand-primary);text-decoration:underline;text-decoration-color:var(--brand-accent)}
+footer .footer-bottom{color:#53687e;border-color:#ceddef}
+.app-placeholder{color:var(--brand-primary);border-color:var(--brand-border)}
+.mobile-nav{background:#fff;border-color:var(--brand-border)}
+.mobile-nav a,.mobile-nav small{color:var(--brand-primary)}
+.mobile-nav button{background:var(--brand-accent);color:var(--action-ink);border-radius:6px}
+.mobile-nav button small{color:inherit}
+.mobile-nav a:before{background:var(--brand-accent)}
+#toast{background:var(--brand-primary);border-color:var(--brand-accent);color:#fff}
+dialog{border-color:var(--brand-border)}dialog::backdrop{background:#0f386e99}
+dialog .dialog-heading h2,.product-info h3,.price-row strong,.cart-item strong{color:var(--brand-primary)}
+dialog .dialog-heading>button,.quantity button,.wish,.drawer .button{background:var(--brand-accent);color:var(--action-ink);border-color:var(--brand-accent);border-radius:6px}
+.product-badge,.discount{background:#fff0e8;color:var(--brand-primary)}
+.wish[aria-pressed=true]{background:var(--brand-accent);color:var(--action-ink)}
+.search-results button{background:#fff;color:var(--brand-primary)}
+.search-results button:hover{background:#fff0e8}
+:focus-visible{outline:2px solid var(--brand-primary);outline-offset:4px}
+::selection{background:#ffd4be;color:var(--brand-primary)}
+@media(max-width:480px){header .navigation .nav-actions .header-action{padding:6px;min-width:32px}header .navigation .nav-actions{gap:9px}.oahee-film-slider .ofs-shade{background:linear-gradient(90deg,#f9fbfff2,#f1f6fde0 58%,#edf3fbbf)}}
+/* Footer uses a single blue background with plain, readable links. */
+footer#contact{background:#0f386e;border-top:0;color:#fff}
+footer#contact .footer-grid h3,footer#contact .footer-grid p,footer#contact .footer-grid small,footer#contact .footer-grid>div>a:not(.logo),footer#contact .footer-grid button,footer#contact .footer-bottom,footer#contact .footer-bottom a{color:#fff}
+footer#contact .footer-grid button{background:transparent;border:0;border-radius:0;padding:0;margin:12px 0;box-shadow:none;text-align:left}
+footer#contact .footer-grid button:hover,footer#contact .footer-grid>div>a:not(.logo):hover,footer#contact .footer-bottom a:hover{background:transparent;color:#fff;text-decoration:underline;text-decoration-color:#fff;text-underline-offset:4px}
+footer#contact .app-placeholder{background:transparent;border-color:#ffffff55;color:#fff}
+footer#contact .footer-bottom{border-color:#ffffff30}
+footer#contact :focus-visible{outline-color:#fff}
+/* Compact header actions: orange icons without filled button backgrounds. */
+header .navigation .nav-actions .header-action,header .navigation .nav-actions .header-action:hover{background:transparent;border:0;box-shadow:none;border-radius:0;padding:0;gap:6px;min-width:40px;color:var(--brand-primary)}
+header .navigation .nav-actions .header-action>span,header .navigation .nav-actions .header-action svg{color:var(--brand-accent)}
+header .navigation .nav-actions .header-action svg{width:24px;height:24px}
+header .navigation .nav-actions .header-action small{color:var(--brand-primary);font-size:10px}
+@media(max-width:480px){header .navigation .nav-actions .header-action,header .navigation .nav-actions .header-action:hover{padding:0;min-width:32px;gap:5px}header .navigation .nav-actions .header-action svg{width:21px;height:21px}header .navigation .nav-actions .header-action small{font-size:8px}}

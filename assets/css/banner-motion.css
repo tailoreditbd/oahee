@@ -1,0 +1,53 @@
+/* Luna campaign motion: soft reveal, drifting photography, staggered copy. */
+#hero-banner{--slide-duration:3s;position:relative;border-bottom:3px solid var(--luna-teal)}
+#hero-banner .banner-slide:not([hidden]){animation:luna-reveal .75s cubic-bezier(.22,1,.36,1) both}
+#hero-banner .banner-slide:not([hidden]) .banner-image>img{animation:luna-photo 3.8s ease-out both;will-change:transform}
+#hero-banner .banner-slide:not([hidden]) .banner-eyebrow{display:block;animation:luna-copy .65s .08s both}
+#hero-banner .banner-slide:not([hidden]) .banner-title{animation:luna-copy .75s .16s both}
+#hero-banner .banner-slide:not([hidden]) .banner-copy>p:not(.banner-title){animation:luna-copy .7s .26s both}
+#hero-banner .banner-slide:not([hidden]) .banner-actions{animation:luna-copy .7s .36s both}
+#hero-banner .banner-slide:not([hidden]) .image-label{animation:luna-label .75s .4s both;border-radius:30px;border:1px solid #a7ebf280}
+#hero-banner .banner-eyebrow{width:fit-content;padding:8px 13px;border:1px solid #a7ebf25c;border-radius:30px;background:#011c4040;backdrop-filter:blur(8px)}
+#hero-banner .banner-controls{padding:10px 14px;background:#011c4070;border:1px solid #a7ebf240;border-radius:40px;backdrop-filter:blur(12px)}
+#hero-banner .banner-arrows button{transition:background .2s,transform .2s}
+#hero-banner .banner-arrows button:hover{transform:scale(1.08)}
+#hero-banner .banner-progress{position:absolute;bottom:0;left:0;width:100%;height:3px;z-index:5;transform:scaleX(0);transform-origin:left;background:var(--luna-aqua);pointer-events:none}
+#hero-banner.is-playing .banner-progress{animation:luna-progress var(--slide-duration) linear infinite}
+@keyframes luna-reveal{from{opacity:.35;clip-path:inset(0 0 0 6%)}to{opacity:1;clip-path:inset(0)}}
+@keyframes luna-photo{from{transform:scale(1.09) translateX(1%)}to{transform:scale(1) translateX(0)}}
+@keyframes luna-copy{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes luna-label{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:translateX(0)}}
+@keyframes luna-progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){#hero-banner .banner-slide:not([hidden]),#hero-banner .banner-slide:not([hidden]) .banner-image>img,#hero-banner .banner-slide:not([hidden]) .banner-copy>*,#hero-banner .banner-slide:not([hidden]) .image-label,#hero-banner .banner-progress{animation:none;will-change:auto}}
+/* Reference-inspired editorial slide exchange and image preview navigation. */
+#hero-banner .banner-track{display:grid;overflow:hidden}
+#hero-banner .banner-slide{grid-area:1/1;min-width:0}
+#hero-banner .banner-slide:not([hidden]){z-index:2;animation:editorial-enter .9s cubic-bezier(.76,0,.24,1) both}
+#hero-banner .banner-slide.is-leaving:not([hidden]){z-index:1;pointer-events:none;animation:editorial-exit .9s cubic-bezier(.76,0,.24,1) both}
+#hero-banner .banner-slide.is-leaving .banner-copy>*{animation:none!important}
+#hero-banner .banner-slide:not([hidden]) .banner-image>img{animation:editorial-image 1.2s cubic-bezier(.22,1,.36,1) both}
+#hero-banner .banner-slide:not([hidden]) .banner-title{animation:editorial-title .85s .2s cubic-bezier(.22,1,.36,1) both}
+#hero-banner .banner-slide:not([hidden]) .banner-eyebrow{animation:luna-copy .7s .15s both}
+#hero-banner .banner-slide:not([hidden]) .banner-copy>p:not(.banner-title){animation:luna-copy .75s .35s both}
+#hero-banner .banner-slide:not([hidden]) .banner-actions{animation:luna-copy .7s .48s both}
+#hero-banner.is-backwards .banner-slide:not([hidden]){animation-name:editorial-enter-back}
+#hero-banner.is-backwards .banner-slide.is-leaving:not([hidden]){animation-name:editorial-exit-back}
+#hero-banner .banner-controls{z-index:4;bottom:20px;width:600px;max-width:calc(100% - 96px);border-radius:14px;gap:15px;padding:10px;background:#011c40e6}
+#hero-banner .banner-dots{gap:10px}
+#hero-banner .banner-dots .banner-preview{display:flex;align-items:center;gap:9px;width:164px;height:52px;padding:4px 9px 4px 4px;border:1px solid #a7ebf240;border-radius:8px;background:#ffffff0a;color:#d7f1f5;overflow:hidden;transition:background .25s,border-color .25s}
+#hero-banner .banner-dots .banner-preview:before{display:none}
+#hero-banner .banner-preview img{width:50px;height:42px;object-fit:cover;border-radius:4px;transition:transform .5s}
+#hero-banner .banner-preview span{font:500 10px/1.4 var(--font-copy);text-align:left}
+#hero-banner .banner-dots .banner-preview[aria-pressed=true]{border-color:var(--luna-aqua);background:#54acbf35;color:#fff}
+#hero-banner .banner-preview:hover img{transform:scale(1.08)}
+#hero-banner .banner-count{white-space:nowrap}
+#hero-banner .banner-arrows{gap:5px}
+@keyframes editorial-enter{from{clip-path:inset(0 0 0 100%);transform:translateX(9%)}to{clip-path:inset(0);transform:translateX(0)}}
+@keyframes editorial-exit{from{transform:translateX(0);opacity:1}to{transform:translateX(-15%);opacity:.35}}
+@keyframes editorial-enter-back{from{clip-path:inset(0 100% 0 0);transform:translateX(-9%)}to{clip-path:inset(0);transform:translateX(0)}}
+@keyframes editorial-exit-back{from{transform:translateX(0);opacity:1}to{transform:translateX(15%);opacity:.35}}
+@keyframes editorial-image{from{transform:scale(1.12) translateX(4%)}to{transform:scale(1) translateX(0)}}
+@keyframes editorial-title{from{opacity:0;transform:translateY(40px);clip-path:inset(0 0 100% 0)}to{opacity:1;transform:translateY(0);clip-path:inset(0)}}
+@media(max-width:768px){#hero-banner .banner-controls{left:24px;right:24px;width:auto;max-width:none;gap:10px}#hero-banner .banner-dots .banner-preview{width:125px}#hero-banner .banner-preview img{width:36px}#hero-banner .banner-copy{padding-bottom:125px}}
+@media(max-width:480px){#hero-banner .banner-controls{left:16px;right:16px;gap:8px}#hero-banner .banner-dots{gap:6px}#hero-banner .banner-dots .banner-preview{width:56px;padding:3px;height:44px}#hero-banner .banner-preview img{width:48px;height:36px}#hero-banner .banner-preview span{display:none}#hero-banner .banner-count{font-size:8px}#hero-banner .banner-arrows button{width:30px;height:30px}}
+@media(prefers-reduced-motion:reduce){#hero-banner .banner-slide:not([hidden]),#hero-banner .banner-slide.is-leaving:not([hidden]),#hero-banner .banner-slide:not([hidden]) .banner-image>img,#hero-banner .banner-slide:not([hidden]) .banner-title{animation:none}}

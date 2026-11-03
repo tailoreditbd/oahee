@@ -1,0 +1,97 @@
+/* Oahee Luna palette: #A7EBF2, #54ACBF, #26658C, #023859, #011C40. Keep last. */
+:root{--brand-primary:#26658c;--brand-accent:#a7ebf2;--brand-hover:#023859;--brand-accent-hover:#c5f5f8;--brand-tint:#eaf8fa;--brand-border:#b4dce5;--purple:#26658c;--navy:#011c40;--orange:#a7ebf2;--ink:#023859;--muted:#38657a;--border:#cce6eb;--paper:#f5fbfc;--blue-deep:#011c40}
+body{background:var(--paper);color:var(--ink)}
+header{border-top-color:var(--brand-accent);border-bottom-color:var(--brand-border)}
+.navigation .logo,.footer-grid .logo{color:var(--brand-primary)}
+.logo span,.footer-grid .logo span{color:var(--brand-accent)}
+.navigation #search-form,.intro-search{background:#eaf8fa;border-color:#cce6eb}
+.navigation #search,.intro-search input,.navigation #search-category{color:var(--blue-deep)}
+.navigation #search::placeholder,.intro-search input::placeholder{color:#38657a}
+.navigation #search-form>.search-button,.intro-search .button{background:var(--brand-accent);color:var(--blue-deep)}
+.navigation #search-form>.search-button:hover,.intro-search .button:hover{background:var(--brand-accent-hover);color:var(--blue-deep)}
+.category-row #all-categories{background:var(--brand-primary);color:#fff}
+.category-row #all-categories:hover,.category-row #all-categories[aria-expanded=true]{background:var(--brand-hover);color:var(--brand-accent);box-shadow:inset 0 -3px var(--brand-accent)}
+.navigation .category-row #nav-links>a,.category-row .category-nav #mega-menu>a{color:var(--blue-deep)}
+.navigation .category-row #nav-links>a:hover,.navigation .category-row #nav-links>a:focus-visible,.category-row .category-nav #mega-menu>a:hover,.category-row .category-nav #mega-menu>a:focus-visible{background:var(--brand-accent);color:var(--blue-deep)}
+.navigation .nav-actions .header-action,.navigation .nav-actions .header-action small{color:var(--brand-primary)}
+.navigation .nav-actions .header-action:hover{color:var(--brand-hover)}
+.cart-count{background:var(--brand-accent);color:var(--blue-deep)}
+h1,h2,h3,.homepage-intro .intro-copy h1,.content-grid strong,.content-steps strong,.faq-section h2{color:var(--blue-deep)}
+.eyebrow,.intro-copy .eyebrow,.how-it-works .eyebrow,.faq-section .eyebrow,.search-results h3,.product-brand{color:var(--brand-primary)}
+p,.section-heading p,.homepage-intro .intro-copy>p,.content-grid p,.content-steps p,.story-copy .section-heading p,.story-copy .content-grid p{color:#38657a}
+.button,.hero-copy .button,.intro-actions .button{background:var(--brand-primary);color:white}
+.button:hover,.hero-copy .button:hover,.intro-actions .button:hover{background:var(--brand-hover);color:#fff}
+.text-button,.intro-actions>a:not(.button){color:var(--brand-primary)}
+.text-button:hover,.intro-actions>a:not(.button):hover{color:var(--brand-hover)}
+.fullwidth-slider.hero,.banner-slide{background:var(--blue-deep)}
+.banner-inner:after{background:linear-gradient(90deg,rgba(1,28,64,.94),rgba(2,56,89,.67) 52%,rgba(2,56,89,.12))}
+.banner-discover .banner-inner:after{background:linear-gradient(90deg,rgba(1,28,64,.94),rgba(2,56,89,.67) 52%,rgba(2,56,89,.12))}
+.banner-copy .banner-title,.banner-discover .banner-copy .banner-title{color:#fff}
+.banner-copy .banner-title em,.banner-discover .banner-copy .banner-title em{color:var(--brand-accent)}
+.banner-copy p,.banner-discover .banner-copy p,.banner-eyebrow,.banner-discover .banner-eyebrow,.banner-secondary,.banner-discover .banner-secondary,.banner-count,.is-second .banner-count{color:#d7f1f5}
+.banner-actions .button,.banner-discover .banner-actions .button{background:var(--brand-accent);color:var(--blue-deep)}
+.banner-actions .button:hover,.banner-discover .banner-actions .button:hover{background:var(--brand-accent-hover);color:var(--blue-deep)}
+.banner-dots button[aria-pressed=true],.is-second .banner-dots button[aria-pressed=true]{background:var(--brand-accent)}
+.banner-arrows button,.is-second .banner-arrows button{background:#26658c60;border-color:#c0e6ec80;color:#fff}
+.banner-arrows button:hover,.is-second .banner-arrows button:hover{background:var(--brand-accent);color:var(--blue-deep)}
+.image-label,.section-photo figcaption{background:#a7ebf2ed;color:var(--blue-deep)}
+.category-slider .content-categories .category-tile:hover{border-color:var(--brand-primary);box-shadow:0 5px 16px #26658c12}
+.category-slider .content-categories .category-tile strong{color:var(--brand-primary)}
+.category-slider .content-categories .category-tile p{color:#38657a}
+.image-how .content-steps li{background:#eaf8fa;border-color:var(--brand-border)}
+.content-steps li:before{background:var(--brand-accent);border-color:var(--brand-accent);color:var(--blue-deep)}
+.seller-section{background:var(--brand-primary);border-color:var(--brand-primary)}
+.seller-section h2,.seller-section li strong{color:#fff}
+.seller-section>div>p,.seller-section li p{color:#d7f1f5}
+.seller-section small{color:#c0e6ec}
+.seller-section .eyebrow{color:var(--brand-accent)}
+.seller-section .button{background:var(--brand-accent);color:var(--blue-deep)}
+.seller-section .button:hover{background:var(--brand-accent-hover);color:var(--blue-deep)}
+.seller-section li{border-color:#ffffff55}
+.content-reasons{border-color:var(--brand-border);background-color:var(--blue-deep)}
+.content-reasons:before{background:linear-gradient(110deg,rgba(1,28,64,.78),rgba(2,56,89,.35))}
+.content-reasons .section-heading h2{color:#fff}
+.content-reasons .section-heading p{color:#eaf8fa}
+.content-reasons .content-grid li{background:#f3fbfced;border-color:#b4dce5}
+.content-reasons .content-grid strong{color:var(--blue-deep)}
+.content-reasons .content-grid p{color:#38657a}
+.content-reasons .contact-cta{background:var(--brand-accent);color:var(--blue-deep);border-color:var(--brand-accent)}
+.content-reasons .contact-cta:hover{background:var(--brand-accent-hover);color:var(--blue-deep)}
+.faq-section{background:linear-gradient(155deg,#edf9fa,#ccebf0)}
+.faq-section>div>p,.faq-section details p{color:#38657a}
+.faq-section details,.faq-section details:first-child{background:#ffffffb3;border-color:#b4dce5}
+.faq-section details[open]{background:#fff;border-color:#54acbf}
+.faq-section summary{color:var(--blue-deep)}
+.faq-section summary:before{background:var(--brand-accent);color:var(--blue-deep);border-color:#c5f5f8}
+.faq-section summary:after,.faq-section details[open] summary:after{background:var(--brand-primary);color:#fff;box-shadow:0 3px 10px #26658c2b}
+.faq-section summary:hover{background:#a7ebf280}
+.faq-section summary:focus-visible{outline-color:var(--brand-primary)}
+footer{background:var(--blue-deep);border-top:5px solid var(--brand-accent)}
+footer .footer-grid .logo{color:var(--brand-accent)}
+footer .footer-grid .logo span{color:#fff}
+footer .footer-grid h3{color:var(--brand-accent)}
+footer .footer-grid p,footer .footer-grid small,footer .footer-grid button,footer .footer-grid>div>a:not(.logo){color:#d7f1f5}
+footer .footer-grid button:hover,footer .footer-grid>div>a:not(.logo):hover{color:var(--brand-accent)}
+footer .footer-bottom{color:#a7ebf2;border-color:#ffffff2b}
+.app-placeholder{color:#d7f1f5;border-color:#ffffff40}
+.mobile-nav{background:#f5fbfc;border-color:var(--brand-border)}
+.mobile-nav a,.mobile-nav button,.mobile-nav small{color:var(--brand-primary)}
+.mobile-nav a:before{background:var(--brand-accent)}
+#toast{background:var(--blue-deep);color:#fff;border:1px solid #a7ebf260}
+dialog{border-color:var(--brand-border)}dialog::backdrop{background:#011c4099}
+.product-info h3,.price-row strong,.cart-item strong{color:var(--brand-primary)}
+.product-badge,.discount{background:#d3f4f7;color:var(--blue-deep)}
+.add{background:var(--brand-accent);border-color:var(--brand-accent);color:var(--blue-deep)}
+.wish[aria-pressed=true]{color:var(--brand-primary);background:#d3f4f7}
+.search-results button:hover{background:#d3f4f7}
+:focus-visible{outline-color:var(--brand-primary)}
+::selection{background:var(--brand-accent);color:var(--blue-deep)}
+
+/* Luna teal accents and tonal surfaces. */
+:root{--luna-aqua:#a7ebf2;--luna-teal:#54acbf;--luna-blue:#26658c;--luna-dark:#023859;--luna-navy:#011c40}
+header{border-top-color:var(--luna-teal)}
+.navigation .logo{color:var(--luna-dark)}
+.navigation .logo span{color:var(--luna-teal)}
+.category-slider .content-categories .category-tile:hover{border-color:var(--luna-teal)}
+.image-how .content-steps li{background:#edf9fa;border-color:#b4dce5}
+footer{border-top-color:var(--luna-teal)}

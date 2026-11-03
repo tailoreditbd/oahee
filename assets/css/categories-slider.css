@@ -1,0 +1,15 @@
+.category-slider{width:100%;min-width:0;position:relative}
+.category-slider .content-categories{display:flex;gap:24px;overflow-x:auto;overflow-y:hidden;scroll-behavior:auto;scroll-snap-type:none;overscroll-behavior-x:contain;scrollbar-width:none;padding:4px 1px 16px;touch-action:pan-x pan-y}
+.category-slider .content-categories::-webkit-scrollbar{display:none}
+.category-slider .content-categories .category-tile{flex:0 0 calc((100% - 72px)/4);min-width:0;display:flex;flex-direction:column;align-items:stretch;text-align:left;padding:0 0 24px;border:1px solid #e0e5ec;border-radius:24px;overflow:hidden;background:#fff;gap:0;transform:none;box-shadow:none}
+.category-slider .content-categories .category-tile:hover{transform:none;box-shadow:none;border-color:#b6c5d7}
+.category-slider .content-categories .category-tile img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border:0;border-radius:0;padding:0;margin:0 0 20px;transform:none}
+.category-slider .content-categories .category-tile strong{font-family:var(--font-heading);font-size:18px;font-weight:700;line-height:1.45;margin:0 20px;padding:0;color:var(--brand-primary)}
+.category-slider .content-categories .category-tile p{font-family:var(--font-copy);font-size:14px;font-weight:400;line-height:1.7;margin:10px 20px 0;color:#617085}
+.category-slider .content-categories .category-tile:after{content:none}
+.category-slider .content-categories:focus-visible{outline-offset:4px}
+.category-browse{margin-top:16px}
+@media(min-width:1500px){.category-slider .content-categories .category-tile{flex-basis:calc((100% - 96px)/5)}}
+@media(max-width:1024px){.category-slider .content-categories .category-tile{flex-basis:calc((100% - 48px)/3)}}
+@media(max-width:768px){.category-slider .content-categories{gap:18px}.category-slider .content-categories .category-tile{flex-basis:44%;border-radius:20px}.category-slider .content-categories .category-tile strong{font-size:16px;margin-inline:16px}.category-slider .content-categories .category-tile p{font-size:13px;margin-inline:16px}}
+@media(max-width:480px){.category-slider .content-categories .category-tile{flex-basis:78%}}

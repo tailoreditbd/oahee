@@ -1,0 +1,19 @@
+/* Reference FAQ: centered introduction, numbered soft rows, circular controls. */
+.faq-section{display:block;padding:56px 36px 40px;border:0;border-radius:30px;background:linear-gradient(180deg,#f7f7f7 0%,#e5e5e5 100%)}
+.faq-section>div:first-child{text-align:center;max-width:760px;margin:0 auto 42px}
+.faq-section>div:first-child .eyebrow{display:none}
+.faq-section h2{margin:0;font-family:var(--font-heading);font-size:44px;font-weight:700;line-height:1.2;letter-spacing:-1px;color:#171717}
+.faq-section>div>p{font-size:16px;line-height:1.7;color:#626262;margin-top:16px}
+.faq-section>div:last-child{counter-reset:faq}
+.faq-section details,.faq-section details:first-child{counter-increment:faq;margin:0 0 12px;padding:0;border:1px solid #ffffff70;border-radius:38px;background:#ffffff80;overflow:hidden}
+.faq-section details:last-child{margin-bottom:0}
+.faq-section summary{display:grid;grid-template-columns:38px minmax(0,1fr) 54px;align-items:center;gap:22px;min-height:108px;padding:24px 30px;font-family:var(--font-heading);font-size:19px;font-weight:700;line-height:1.5;letter-spacing:0;color:#242424;cursor:pointer;transition:background .2s}
+.faq-section summary:before{content:counter(faq);display:grid;place-items:center;width:36px;height:36px;border:1px solid #fff;border-radius:12px;background:#f7f7f7;box-shadow:0 2px 4px #00000010;font-size:16px;font-weight:400;color:#333}
+.faq-section summary:after{content:'+';display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 50% 55%,#050505 38%,#292929 70%,#828282 100%);box-shadow:inset 0 0 5px #ffffff70,0 1px 3px #00000018;color:#fff;font-size:30px;font-weight:400;line-height:1}
+.faq-section summary:hover{background:#ffffff45}
+.faq-section summary:focus-visible{outline:3px solid #9b653c;outline-offset:-5px}
+.faq-section details[open]{background:#ffffffb3;border-color:#fff}
+.faq-section details[open] summary:after{content:'-';color:#fff}
+.faq-section details p{margin:0;padding:0 106px 28px 90px;font-family:var(--font-copy);font-size:16px;font-weight:400;line-height:1.8;letter-spacing:0;color:#555}
+@media(max-width:768px){.faq-section{padding:36px 20px 24px;border-radius:24px}.faq-section>div:first-child{margin-bottom:28px}.faq-section h2{font-size:32px;letter-spacing:0}.faq-section details,.faq-section details:first-child{border-radius:26px}.faq-section summary{grid-template-columns:32px minmax(0,1fr) 44px;gap:14px;min-height:92px;padding:20px;font-size:17px}.faq-section summary:before{width:30px;height:30px;font-size:14px;border-radius:10px}.faq-section summary:after{width:44px;height:44px;font-size:26px}.faq-section details p{padding:0 24px 24px 66px;font-size:14px}}
+@media(max-width:480px){.faq-section{padding:30px 12px 16px}.faq-section h2{font-size:28px}.faq-section>div>p{font-size:14px}.faq-section summary{grid-template-columns:28px minmax(0,1fr) 36px;gap:10px;padding:18px 14px;font-size:15px}.faq-section summary:before{width:28px;height:28px}.faq-section summary:after{width:36px;height:36px;font-size:24px}.faq-section details p{padding:0 20px 22px 52px}}

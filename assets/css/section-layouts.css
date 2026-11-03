@@ -1,0 +1,61 @@
+/* Four image-led sections; copy and image sources remain independently editable. */
+.section-photo{margin:0;position:relative;min-width:0;overflow:hidden;background:#e9edf2;border-radius:24px}
+.section-photo img{width:100%;height:100%;display:block;object-fit:cover}
+.section-photo figcaption{position:absolute;bottom:20px;left:20px;right:20px;padding:12px 16px;border-radius:10px;background:#fffef4ed;color:#10253f;font:600 10px/1.5 var(--font-copy);letter-spacing:1.1px;backdrop-filter:blur(8px)}
+.image-how{padding-top:44px}.how-lead{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center;margin-bottom:36px}.how-lead .section-heading{margin:0;display:block}.how-lead h2{max-width:340px}.how-lead .section-photo{height:330px;border-radius:70px 24px 24px 24px}.how-lead .section-heading p{margin-top:18px}
+.image-how .content-steps{gap:20px}.image-how .content-steps li{padding:24px;background:#f4f7fa;border:1px solid #e3e9f0;border-radius:18px}.image-how .content-steps li:after{display:none}
+.image-seller{grid-template-columns:1fr 1fr;gap:36px 48px;padding:44px;border-radius:26px;align-items:center;overflow:hidden}.image-seller>div{min-width:0}.image-seller .section-photo{height:370px;transform:rotate(2deg);border:6px solid #ffffff20;border-radius:24px}.image-seller ul{grid-column:1/-1;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}.image-seller li{padding-top:20px}
+.image-trust.editorial-story{grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}.image-trust .section-photo{height:570px;border-radius:24px 90px 24px 24px}.image-trust .story-copy .section-heading h2{max-width:none}.image-trust .story-copy .section-heading p{font-size:16px}.image-trust .story-copy .content-grid{gap:24px}.image-trust .story-copy .content-grid li{padding-top:18px}.image-trust .story-copy .content-grid p{font-size:15px;line-height:1.75}
+.image-reasons{padding:40px;border-radius:26px;background:#f1f5f8}.image-reasons>.section-heading{max-width:800px}.reasons-body{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;align-items:stretch}.reasons-body .section-photo{min-height:420px}.image-reasons .reasons-body .content-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.image-reasons .reasons-body .content-grid li{padding:20px;background:#fff;border:1px solid #e0e7ee;border-radius:16px}.image-reasons .contact-cta{margin-top:24px}
+@media(max-width:1024px){.how-lead,.image-trust.editorial-story{gap:30px}.image-seller{padding:30px;gap:28px}.image-seller ul{grid-template-columns:1fr 1fr}.image-reasons{padding:28px}.reasons-body{gap:24px}.image-trust .section-photo{height:620px}}
+@media(max-width:768px){.how-lead,.image-seller,.image-trust.editorial-story,.reasons-body{grid-template-columns:1fr}.how-lead{gap:24px}.how-lead h2{max-width:none}.how-lead .section-photo{height:290px;border-radius:40px 18px 18px 18px}.image-how .content-steps{grid-template-columns:1fr 1fr}.image-seller{padding:26px}.image-seller .section-photo{height:300px;transform:none}.image-seller ul{grid-column:auto}.image-trust .section-photo{height:340px}.image-trust .story-copy .section-heading p{font-size:15px}.image-trust .story-copy .content-grid p{font-size:14px}.image-reasons{padding:24px}.reasons-body .section-photo{min-height:0;height:300px}}
+@media(max-width:480px){.image-how .content-steps,.image-seller ul,.image-trust .story-copy .content-grid,.image-reasons .reasons-body .content-grid{grid-template-columns:1fr}.image-how .content-steps li{padding:20px}.image-seller,.image-reasons{padding:22px}.section-photo figcaption{left:12px;right:12px;bottom:12px;font-size:9px}.image-trust .section-photo{height:290px}}
+/* Product photograph behind the shopping benefits. */
+.content-reasons{position:relative;isolation:isolate;overflow:hidden;background:#f3f5f7 url('https://images.unsplash.com/photo-1541643600914-78b084683601?w=1600&auto=format&fit=crop&q=85') center/cover no-repeat}
+.content-reasons:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,rgba(247,249,252,.97),rgba(247,249,252,.90) 55%,rgba(247,249,252,.78));pointer-events:none}
+.content-reasons .content-grid li{background:#ffffffbd;border:1px solid #ffffffd9;border-radius:14px;padding:20px;backdrop-filter:blur(5px)}
+
+/* Centered boxed contact action. */
+.content-reasons .contact-cta{display:block;width:fit-content;min-width:190px;margin:30px auto 0;padding:15px 28px;border:1px solid var(--brand-primary);border-radius:10px;background:var(--brand-primary);color:#fff;font-family:var(--font-copy);font-size:15px;font-weight:600;line-height:1.5;text-align:center;text-decoration:none;box-shadow:0 5px 14px #10253f18;transition:background .18s,box-shadow .18s}
+.content-reasons .contact-cta:hover{background:#28425e;color:#fff;box-shadow:0 7px 18px #10253f26}
+/* Keep the fan visible beside the benefit cards without a washed-out overlay. */
+.content-reasons{background:#edf1f5 url('https://i5-mx.walmartimages.com/mg/gm/3pp/asr/ea839bb0-5717-4a77-9640-63549c4c9eba.25aacf7e60356167a8f532161fcc73b6.jpeg?odnBg=ffffff&odnHeight=2000&odnWidth=2000') right center/42% auto no-repeat}
+.content-reasons:before{background:linear-gradient(90deg,#edf1f5 0%,#edf1f5 55%,rgba(237,241,245,.08) 75%,transparent)}
+.content-reasons>.section-heading,.content-reasons>.content-grid{width:65%}
+.content-reasons .content-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.content-reasons .content-grid li{background:#ffffffed;backdrop-filter:none}
+@media(max-width:768px){.content-reasons{background-position:center top;background-size:auto 300px;padding-top:320px}.content-reasons:before{background:linear-gradient(180deg,transparent 220px,#edf1f5 310px)}.content-reasons>.section-heading,.content-reasons>.content-grid{width:100%}}
+@media(max-width:480px){.content-reasons .content-grid{grid-template-columns:1fr}}
+/* User-supplied fan photograph as the full section background. */
+.content-reasons{background:#172739 url('../img/why-shop-background.webp') center 45%/cover no-repeat;padding-top:40px}
+.content-reasons:before{background:linear-gradient(110deg,rgba(9,20,34,.70),rgba(9,20,34,.28))}
+.content-reasons>.section-heading,.content-reasons>.content-grid{width:100%}
+.content-reasons .section-heading h2{color:#fff}
+.content-reasons .section-heading p{color:#f0f3f8}
+.content-reasons .content-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.content-reasons .content-grid li{background:rgba(255,255,255,.91);border-color:#ffffffb3}
+.content-reasons .contact-cta{background:#fff;color:#10253f;border-color:#fff}
+.content-reasons .contact-cta:hover{background:#eaf0f6;color:#10253f}
+@media(max-width:768px){.content-reasons{padding-top:28px;background-position:center}.content-reasons .content-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.content-reasons .content-grid{grid-template-columns:1fr}}
+/* Seller section: image on the left, left-aligned copy on the right. */
+.image-seller>.section-photo-seller{grid-column:1;grid-row:1;transform:none}
+.image-seller>div{grid-column:2;grid-row:1;text-align:left}
+.image-seller>div .button{margin-left:0;margin-right:auto}
+.image-seller>ul{grid-column:1/-1;grid-row:2}
+@media(max-width:768px){.image-seller>.section-photo-seller{grid-column:1;grid-row:1}.image-seller>div{grid-column:1;grid-row:2}.image-seller>ul{grid-column:1;grid-row:3}}
+/* Trust section: copy on the left, photograph on the right. */
+.image-trust.editorial-story{grid-template-columns:1.1fr 1fr}
+.image-trust>.story-copy{grid-column:1;grid-row:1;text-align:left}
+.image-trust>.section-photo-trust{grid-column:2;grid-row:1}
+@media(max-width:768px){.image-trust.editorial-story{grid-template-columns:1fr}.image-trust>.story-copy{grid-column:1;grid-row:1}.image-trust>.section-photo-trust{grid-column:1;grid-row:2}}
+/* Text-only How it works and Seller sections. */
+.image-how .how-lead{grid-template-columns:minmax(0,1fr);gap:0;margin-bottom:30px}
+.image-how .how-lead h2{max-width:none}
+.image-how .how-lead .section-heading p{max-width:850px}
+.image-seller{grid-template-columns:minmax(0,1fr);gap:30px}
+.image-seller>div{grid-column:1;grid-row:1;max-width:none;text-align:left}
+.image-seller>div>p{max-width:850px}
+.image-seller>ul{grid-column:1;grid-row:2;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+@media(max-width:1024px){.image-seller>ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.image-seller>ul{grid-template-columns:minmax(0,1fr)}.image-how .how-lead{margin-bottom:24px}}

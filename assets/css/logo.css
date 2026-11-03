@@ -1,0 +1,7 @@
+/* Display the supplied artwork without its large outer white margins. */
+header .navigation.main-header{grid-template-columns:160px minmax(0,1fr) 245px}
+header .navigation.main-header>a.logo,footer .footer-grid a.logo{display:block;position:relative;overflow:hidden;width:160px;height:44px;min-height:0;padding:0;margin:0;background:#fff;border-radius:4px;line-height:1;flex-shrink:0}
+header .navigation.main-header>a.logo>img.oahee-logo-image,footer .footer-grid a.logo>img.oahee-logo-image{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:158.73%;height:auto;max-width:none;margin:0}
+@media(min-width:769px) and (max-width:1200px){header .navigation.main-header{grid-template-columns:140px minmax(0,1fr) 210px}header .navigation.main-header>a.logo{width:140px;height:39px}}
+@media(min-width:769px) and (max-width:1024px){header .navigation.main-header{grid-template-columns:140px minmax(0,1fr) 190px}}
+@media(max-width:768px){header .navigation.main-header{grid-template-columns:minmax(0,1fr) auto}header .navigation.main-header>a.logo{width:140px;height:39px;min-height:0;display:block;align-self:center;justify-self:start}}

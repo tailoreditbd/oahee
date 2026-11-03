@@ -1,0 +1,6 @@
+.tmp/
+dist/
+Oahee-GitHub-Pages*.zip
+node_modules/
+.env
+.env.*
