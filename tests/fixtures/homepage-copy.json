@@ -1,0 +1,100 @@
+{
+  "source": "Oahee Homepage.zip / OaheeHomepage.html",
+  "expected": {
+    "h1": [
+      "Online Shopping & Marketplace in Bangladesh | Oahee"
+    ],
+    "h2": [
+      "Shop online by category",
+      "How Oahee works",
+      "Sell online on Oahee",
+      "A Marketplace Built on Trust",
+      "Why shop on Oahee",
+      "FAQs about Oahee"
+    ],
+    "strong": [
+      "Fashion and Accessories",
+      "Electronics",
+      "Beauty and Personal Care",
+      "Sports and Outdoors",
+      "Toys and Baby",
+      "Home and Living",
+      "Books and Hobbies",
+      "Groceries and Gifts",
+      "Search or browse.",
+      "Compare and choose.",
+      "Pay securely.",
+      "Receive and review.",
+      "Create a listing in minutes",
+      "Reach more buyers",
+      "Stay in control",
+      "Build your reputation",
+      "Protected payments:",
+      "Honest reviews:",
+      "Clear policies:",
+      "Responsive support:",
+      "One marketplace, endless choice.",
+      "Prices that make sense.",
+      "Shop with confidence.",
+      "Secure checkout.",
+      "Help when you need it.",
+      "Easy for sellers too."
+    ],
+    "summary": [
+      "What is Oahee?",
+      "What can I buy on Oahee?",
+      "Is it safe to shop on Oahee?",
+      "How do I start selling on Oahee?",
+      "What if my order arrives damaged or not as described?"
+    ],
+    "p": [
+      "Discover fashion, electronics, home essentials, beauty, toys, and more from sellers you can trust. Compare prices, shop securely, and get your order delivered to your door.",
+      "Whatever you are looking for, Oahee brings thousands of listings from independent sellers and businesses into one easy place to browse. Pick a category to get started.",
+      "Clothing, shoes, bags, and jewelry for every style and season.",
+      "Phones, laptops, headphones, gaming gear, and smart devices.",
+      "Skincare, makeup, haircare, and grooming products.",
+      "Fitness equipment, camping gear, and activewear.",
+      "Games, learning toys, and baby essentials for all ages.",
+      "Furniture, kitchenware, decor, and everyday household essentials.",
+      "Books, stationery, crafts, and collectibles.",
+      "Pantry staples, specialty foods, and gift ideas for any occasion.",
+      "Buying online should not feel complicated. Here is how to get from search to doorstep in four steps.",
+      "Type what you need or explore categories to see available listings.",
+      "Check photos, descriptions, seller ratings, and reviews, then add your pick to the cart.",
+      "Complete checkout with your preferred payment method.",
+      "Track your order, enjoy your purchase, and share feedback to help other shoppers.",
+      "Turn what you make, source, or no longer need into income. Oahee puts your products in front of shoppers who are already searching for them.",
+      "with photos, a clear description, and your price.",
+      "through search, categories, and your own seller profile.",
+      "of your prices, inventory, and shipping options.",
+      "with customer ratings that help your shop stand out.",
+      "Your peace of mind matters as much as your purchase. Oahee works to keep every transaction clear, secure, and fair.",
+      "Your payment details are handled through secure processing.",
+      "Ratings come from real customers who have bought from a seller.",
+      "Returns, refunds, and shipping terms are easy to find before you buy.",
+      "Reach our team if something goes wrong with an order.",
+      "Oahee is built to make online shopping simple, fair, and safe, whether you are buying a single gift or stocking up for the month.",
+      "Find new and pre-owned items from many sellers without jumping between websites.",
+      "Compare similar listings side by side and pick the offer that fits your budget.",
+      "Seller ratings and customer reviews help you judge a product before you pay.",
+      "Pay with the methods you already use, backed by protected payment processing.",
+      "Our support team is ready to step in if an order is late, damaged, or not as described.",
+      "Anyone can list items and reach buyers, from casual sellers to growing shops.",
+      "Oahee is a general online marketplace where shoppers can buy products from many sellers, and sellers can list items for a wide audience, all in one place.",
+      "You can shop fashion, electronics, home and living, beauty, sports, toys, books, groceries, and more. New categories and listings are added regularly.",
+      "Yes. Oahee uses secure payment processing, seller ratings, and customer reviews so you can check a seller before you buy.",
+      "Create a seller account, add your products with photos and prices, and publish your listings. Buyers can find them through search and categories right away.",
+      "Contact our support team through your order page. We will help you work out a return, replacement, or refund according to the seller's policy."
+    ],
+    "buttons": [
+      "Start Shopping",
+      "Sell on Oahee",
+      "Browse All Categories",
+      "Become a Seller",
+      "Call Us Today"
+    ],
+    "placeholder": [
+      "Search for products, brands, or categories."
+    ]
+  }
+}
