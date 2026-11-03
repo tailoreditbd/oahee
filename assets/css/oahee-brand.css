@@ -92,7 +92,7 @@ dialog .dialog-heading>button,.quantity button,.wish,.drawer .button{background:
 ::selection{background:#ffd4be;color:var(--brand-primary)}
 @media(max-width:480px){header .navigation .nav-actions .header-action{padding:6px;min-width:32px}header .navigation .nav-actions{gap:9px}.oahee-film-slider .ofs-shade{background:linear-gradient(90deg,#f9fbfff2,#f1f6fde0 58%,#edf3fbbf)}}
 /* Footer uses a single blue background with plain, readable links. */
-footer#contact{background:#0f386e;border-top:0;color:#fff}
+footer#contact{background:var(--brand-primary);border-top:0;color:#fff}
 footer#contact .footer-grid h3,footer#contact .footer-grid p,footer#contact .footer-grid small,footer#contact .footer-grid>div>a:not(.logo),footer#contact .footer-grid button,footer#contact .footer-bottom,footer#contact .footer-bottom a{color:#fff}
 footer#contact .footer-grid button{background:transparent;border:0;border-radius:0;padding:0;margin:12px 0;box-shadow:none;text-align:left}
 footer#contact .footer-grid button:hover,footer#contact .footer-grid>div>a:not(.logo):hover,footer#contact .footer-bottom a:hover{background:transparent;color:#fff;text-decoration:underline;text-decoration-color:#fff;text-underline-offset:4px}
